@@ -181,7 +181,7 @@
                 </p>
               </div>
             </li>
-            <li class="slider__slide">
+            <li class="slider__slide slider__slide_next">
               <div class="customer-card">
                 <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
                 <h3 class="customer__name">Ann Lubin</h3>
@@ -212,7 +212,7 @@
                 </p>
               </div>
             </li>
-            <li class="slider__slide">
+            <li class="slider__slide slider__slide_prev">
               <div class="customer-card">
                 <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
                 <h3 class="customer__name">Ann Lubin</h3>
@@ -224,69 +224,119 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section">
-        <h2 class="section__title">Our recent blog</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.</p>
-        <ul>
-          <li>
-            <img height="228" src="assets/blog-1.jpeg" alt="blog image" />
-            <p></p>
-            <a href="">read more</a>
+        <ul class="slider-navigation">
+          <li class="slider-navigation__point slider-navigation__point_active">
+            <button class="slider-navigation__button"></button>
           </li>
-          <li>
-            <img height="228" src="assets/blog-2.jpeg" alt="blog image" />
-            <p></p>
-            <a href="">read more</a>
+          <li class="slider-navigation__point">
+            <button class="slider-navigation__button"></button>
           </li>
-          <li>
-            <img height="228" src="assets/blog-3.jpeg" alt="blog image" />
-            <p></p>
-            <a href="">read more</a>
+          <li class="slider-navigation__point">
+            <button class="slider-navigation__button"></button>
+          </li>
+          <li class="slider-navigation__point">
+            <button class="slider-navigation__button"></button>
+          </li>
+          <li class="slider-navigation__point">
+            <button class="slider-navigation__button"></button>
           </li>
         </ul>
-        <div>
-          <img src="#" alt="" />
-          <p>info.design@gmail.com</p>
-          <img src="#" alt="" />
-          <p>+880 321 655 9985</p>
-        </div>
+      </section>
+      <section class="section blog-section">
+        <h2 class="section__title">Our recent blog</h2>
+        <p class="section__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
+        </p>
+        <ul class="blog-list">
+          <li class="blog-card">
+            <img class="blog-card__img" height="228" src="assets/blog-1.jpeg" alt="blog image" />
+            <div class="blog-card__content">
+              <h3 class="blog-card__title">The Snap Pixel: How It Works and How to Install</h3>
+              <p class="blog-card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus
+                vitae, nullam lobortis enim.
+              </p>
+              <a class="blog-card__link" href="#">read more</a>
+            </div>
+          </li>
+          <li class="blog-card">
+            <img class="blog-card__img" height="228" src="assets/blog-2.jpeg" alt="blog image" />
+            <div class="blog-card__content">
+              <h3 class="blog-card__title">Global Partner Solutions: A Partnership of Innova</h3>
+              <p class="blog-card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus
+                vitae, nullam lobortis enim.
+              </p>
+              <a class="blog-card__link" href="#">read more</a>
+            </div>
+          </li>
+          <li class="blog-card">
+            <img class="blog-card__img" height="228" src="assets/blog-3.jpeg" alt="blog image" />
+            <div class="blog-card__content">
+              <h3 class="blog-card__title">2021: An opportunity for Snapchatters to start fre</h3>
+              <p class="blog-card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus
+                vitae, nullam lobortis enim.
+              </p>
+              <a class="blog-card__link" href="#">read more</a>
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
-    <footer>
-      <h2>Logo</h2>
-      <p>
+    <footer class="footer">
+      <div class="footer__contacts">
+        <div class="footer__contact">
+          <div class="contacts__image">
+            <img height="20" src="/assets/icons/mail-icon.svg" alt="email" />
+          </div>
+          <a class="contacts__link" href="mailto:info.design@gmail.com">info.design@gmail.com</a>
+        </div>
+        <div class="footer__contact">
+          <div class="contacts__image">
+            <img height="20" src="assets/icons/contact-phone-icon.svg" alt="phone" />
+          </div>
+          <a class="contacts__link" href="tel:+880 321 655 9985">+880 321 655 9985</a>
+        </div>
+      </div>
+      <h2 class="footer__title">Logo</h2>
+      <p class="footer__description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam
         lobortis enim.
       </p>
-      <ul>
-        <li>
-          <a href=""><img src="#" alt="" /></a>
+      <ul class="footer__links">
+        <li class="footer__link">
+          <a href=""><img src="assets/icons/facebook-icon.svg" alt="facebook" /></a>
         </li>
-        <li>
-          <a href=""><img src="#" alt="" /></a>
+        <li class="footer__link">
+          <a href=""><img src="assets/icons/instagram-icon.svg" alt="instagram" /></a>
         </li>
-        <li>
-          <a href=""><img src="#" alt="" /></a>
+        <li class="footer__link">
+          <a href=""><img src="assets/icons/twitter-icon.svg" alt="twitter" /></a>
         </li>
-        <li>
-          <a href=""><img src="#" alt="" /></a>
+        <li class="footer__link">
+          <a href=""><img src="assets/icons/youtube-icon.svg" alt="youtube" /></a>
         </li>
       </ul>
-      <h3>quick link</h3>
-      <ul>
-        <li><a href="">About</a></li>
-        <li><a href="">Features</a></li>
-        <li><a href="">Screenshot</a></li>
-        <li><a href="">Blog</a></li>
+      <h3 class="footer__subtitle">quick link</h3>
+      <ul class="footer__quick-links">
+        <li><a class="footer__quick-link" href="#">About</a></li>
+        <li><a class="footer__quick-link" href="#">Features</a></li>
+        <li><a class="footer__quick-link" href="#">Screenshot</a></li>
+        <li><a class="footer__quick-link" href="#">Blog</a></li>
       </ul>
-      <h3>news letter</h3>
-      <p>Subscribe our newsletter to get our latest update & news</p>
-      <form>
-        <input type="text" placeholder="Your email address" />
-        <button type="submit"><img src="#" alt="" /></button>
+      <h3 class="footer__subtitle newsletter-title">news letter</h3>
+      <p class="footer__description">Subscribe our newsletter to get our latest update & news</p>
+      <form class="newsletter">
+        <input class="newsletter__input" type="email" placeholder="Your email address" />
+        <button class="newsletter__button" type="submit">
+          <img height="24" src="assets/icons/send-icon.svg" alt="send" />
+        </button>
       </form>
-      <p><img src="#" alt="" />Copyright 2021 .Ojjomedia. All Right Reserved.</p>
+      <div class="footer__copyright">
+        <img height="18" src="assets/icons/copyright-icon.svg" alt="copyright" />
+        <p>Copyright 2021 .Ojjomedia. All Right Reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
