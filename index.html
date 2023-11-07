@@ -9,221 +9,225 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__nav">
-        <button class="header__expand-button">
-          <img src="assets/icons/burger-icon.svg" alt="burger-icon" />
-        </button>
-        <ul class="header__collapse-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Features</a></li>
-        </ul>
-        <a class="header__logo" href="/"><img class="logo__image" src="assets/logo.png" alt="logo" /></a>
-        <ul class="header__collapse-nav">
-          <li><a href="/">Screenshot</a></li>
-          <li><a href="/">Blog</a></li>
-        </ul>
-        <a href="#" class="header__btn">Download</a>
-      </nav>
+      <div class="container">
+        <nav class="header__nav">
+          <button class="header__expand-button">
+            <img src="assets/icons/burger-icon.svg" alt="burger-icon" />
+          </button>
+          <ul class="header__collapse-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Features</a></li>
+          </ul>
+          <a class="header__logo" href="/"><img class="logo__image" src="assets/logo.png" alt="logo" /></a>
+          <ul class="header__collapse-nav">
+            <li><a href="/">Screenshot</a></li>
+            <li><a href="/">Blog</a></li>
+          </ul>
+          <a href="#" class="header__btn">Download</a>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="with-background section hero-section">
-        <div class="hero">
-          <h1 class="hero__title section__title">A Great App Makes Your Life Better</h1>
-          <p class="hero__description">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-            velit mollit.
-          </p>
-          <p class="hero__download">Download App Now</p>
-          <ul class="download-links">
-            <li>
-              <a href="/"><img height="34" src="assets/google-play.png" alt="google play" /></a>
-            </li>
-            <li>
-              <a href="/"><img height="34" src="assets/app-store.png" alt="app store" /></a>
-            </li>
-          </ul>
-        </div>
-        <div class="section__image">
-          <img class="hero-section__image" height="521" src="assets/section1-image.png" alt="phone" />
+        <div class="container">
+          <div class="hero">
+            <h1 class="hero__title section__title">A Great App Makes Your Life Better</h1>
+            <p class="hero__description">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+              enim velit mollit.
+            </p>
+            <p class="hero__download">Download App Now</p>
+            <ul class="download-links">
+              <li>
+                <a href="/"><img height="34" src="assets/google-play.png" alt="google play" /></a>
+              </li>
+              <li>
+                <a href="/"><img height="34" src="assets/app-store.png" alt="app store" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="section__image">
+            <img class="hero-section__image" height="521" src="assets/section1-image.png" alt="phone" />
+          </div>
         </div>
       </section>
       <section class="section about-section">
-        <h2 class="section__title">About Our App</h2>
-        <p class="section__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
-        </p>
-        <div class="section__image section__image_drop-shadow">
-          <img height="324" src="assets/section2-phone.png" alt="phone" />
-        </div>
-        <ul class="about-app-list">
-          <li class="about-app-list-item">
-            <div>
+        <div class="container">
+          <h2 class="section__title">About Our App</h2>
+          <p class="section__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
+          </p>
+          <div class="section__image section__image_drop-shadow">
+            <img height="324" src="assets/section2-phone.png" alt="phone" />
+          </div>
+          <ul class="about-app-list">
+            <li class="about-app-list-item">
               <h3 class="about-app__title">Creative design</h3>
               <p class="about-app__description">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
-            </div>
-          </li>
-          <li class="about-app-list-item">
-            <div>
+            </li>
+            <li class="about-app-list-item">
               <h3 class="about-app__title">easy to use</h3>
               <p class="about-app__description">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
-            </div>
-          </li>
-          <li class="about-app-list-item">
-            <div>
+            </li>
+            <li class="about-app-list-item">
               <h3 class="about-app__title">Best user experince</h3>
               <p class="about-app__description">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="section with-background app-features-section">
-        <h2 class="section__title">App features</h2>
-        <p class="section__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
-        </p>
-        <ul class="app-features-list">
-          <li class="app-feature">
-            <img height="50" class="app-feature__icon" src="assets/icons/comments-icon.svg" alt="" />
-            <h3 class="app-feature__title">Full free chat</h3>
-            <p class="app-feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </li>
-          <li class="app-feature">
-            <img height="50" class="app-feature__icon" src="assets/icons/features-icon.svg" alt="" />
-            <h3 class="app-feature__title">unlimited features</h3>
-            <p class="app-feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </li>
-          <li class="app-feature">
-            <img height="50" class="app-feature__icon" src="assets/icons/feather-icon.svg" alt="" />
-            <h3 class="app-feature__title">awesome ui design</h3>
-            <p class="app-feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </li>
-          <li class="app-feature">
-            <img class="app-features__image" height="468" src="assets/section3-phone.png" alt="" />
-          </li>
-          <li class="app-feature">
-            <img height="50" class="app-feature__icon" src="assets/icons/phone-icon.svg" alt="" />
-            <h3 class="app-feature__title">iso & android version</h3>
-            <p class="app-feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </li>
-          <li class="app-feature">
-            <img height="50" class="app-feature__icon" src="assets/icons/retina-icon.svg" alt="" />
-            <h3 class="app-feature__title">retina ready graphics</h3>
-            <p class="app-feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </li>
-          <li class="app-feature">
-            <img height="50" class="app-feature__icon" src="assets/icons/person-icon.svg" alt="" />
-            <h3 class="app-feature__title">24/7 support by real pepole</h3>
-            <p class="app-feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section__title">App features</h2>
+          <p class="section__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
+          </p>
+          <ul class="app-features-list">
+            <li class="app-feature">
+              <img height="50" class="app-feature__icon" src="assets/icons/comments-icon.svg" alt="" />
+              <h3 class="app-feature__title">Full free chat</h3>
+              <p class="app-feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </li>
+            <li class="app-feature">
+              <img height="50" class="app-feature__icon" src="assets/icons/features-icon.svg" alt="" />
+              <h3 class="app-feature__title">unlimited features</h3>
+              <p class="app-feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </li>
+            <li class="app-feature">
+              <img height="50" class="app-feature__icon" src="assets/icons/feather-icon.svg" alt="" />
+              <h3 class="app-feature__title">awesome ui design</h3>
+              <p class="app-feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </li>
+            <li class="app-feature">
+              <img class="app-features__image" height="468" src="assets/section3-phone.png" alt="" />
+            </li>
+            <li class="app-feature">
+              <img height="50" class="app-feature__icon" src="assets/icons/phone-icon.svg" alt="" />
+              <h3 class="app-feature__title">iso & android version</h3>
+              <p class="app-feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </li>
+            <li class="app-feature">
+              <img height="50" class="app-feature__icon" src="assets/icons/retina-icon.svg" alt="" />
+              <h3 class="app-feature__title">retina ready graphics</h3>
+              <p class="app-feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </li>
+            <li class="app-feature">
+              <img height="50" class="app-feature__icon" src="assets/icons/person-icon.svg" alt="" />
+              <h3 class="app-feature__title">24/7 support by real pepole</h3>
+              <p class="app-feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="section download-section">
-        <h2 class="section__title">Download App Now</h2>
-        <p class="section__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
-          nullam lobortis enim.
-        </p>
-        <ul class="download-links">
-          <li>
-            <a href="/"><img height="45" src="assets/google-play.png" alt="google play" /></a>
-          </li>
-          <li>
-            <a href="/"><img height="45" src="assets/app-store.png" alt="app store" /></a>
-          </li>
-        </ul>
-        <ul class="app-stats">
-          <li class="app-stats__item">
-            <img height="18" class="app-stat__image" src="assets/icons/download-icon.svg" alt="download" />
-            <p class="app-stat__count">59865</p>
-            <p class="app-stat__description">Download</p>
-          </li>
-          <li class="app-stats__item">
-            <img height="18" class="app-stat__image" src="assets/icons/like-icon.svg" alt="like" />
-            <p class="app-stat__count">29852</p>
-            <p class="app-stat__description">Like</p>
-          </li>
-          <li class="app-stats__item">
-            <img height="18" class="app-stat__image" src="assets/icons/star-icon.svg" alt="star" />
-            <p class="app-stat__count">1500</p>
-            <p class="app-stat__description">5 star rating</p>
-          </li>
-        </ul>
-        <div class="section__image section__image_drop-shadow">
-          <img height="310" src="assets/app-stats-image.png" alt="phone" />
+        <div class="container">
+          <h2 class="section__title">Download App Now</h2>
+          <p class="section__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
+            nullam lobortis enim.
+          </p>
+          <ul class="download-links">
+            <li>
+              <a href="/"><img height="45" src="assets/google-play.png" alt="google play" /></a>
+            </li>
+            <li>
+              <a href="/"><img height="45" src="assets/app-store.png" alt="app store" /></a>
+            </li>
+          </ul>
+          <ul class="app-stats">
+            <li class="app-stats__item">
+              <img height="18" class="app-stat__image" src="assets/icons/download-icon.svg" alt="download" />
+              <p class="app-stat__count">59865</p>
+              <p class="app-stat__description">Download</p>
+            </li>
+            <li class="app-stats__item">
+              <img height="18" class="app-stat__image" src="assets/icons/like-icon.svg" alt="like" />
+              <p class="app-stat__count">29852</p>
+              <p class="app-stat__description">Like</p>
+            </li>
+            <li class="app-stats__item">
+              <img height="18" class="app-stat__image" src="assets/icons/star-icon.svg" alt="star" />
+              <p class="app-stat__count">1500</p>
+              <p class="app-stat__description">5 star rating</p>
+            </li>
+          </ul>
+          <div class="section__image section__image_drop-shadow">
+            <img height="310" src="assets/app-stats-image.png" alt="phone" />
+          </div>
         </div>
       </section>
       <section class="section usage-section">
-        <h2 class="section__title">how to use the app perfectly</h2>
-        <p class="section__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
-        </p>
-        <a class="usage-video" href="#">
-          <div class="usage-video__play-button">
-            <img height="24" src="assets/icons/play-icon.svg" alt="play" />
-          </div>
-        </a>
+        <div class="container">
+          <h2 class="section__title">how to use the app perfectly</h2>
+          <p class="section__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
+          </p>
+          <a class="usage-video" href="#">
+            <div class="usage-video__play-button">
+              <img height="24" src="assets/icons/play-icon.svg" alt="play" />
+            </div>
+          </a>
+        </div>
       </section>
       <section class="section with-background customers-section">
         <h2 class="section__title">Our Happy Customers</h2>
         <p class="section__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
         </p>
-        <div class="slider-wrapper">
-          <ul class="slider">
-            <li class="slider__slide slider__slide_active">
-              <div class="customer-card">
-                <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
-                <p class="customer__name">Ann Lubin</p>
-                <p class="customer__role">CO-FUNDER</p>
-                <p class="customer__review">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolorum vitae ullam assumenda?
-                </p>
-              </div>
-            </li>
-            <li class="slider__slide slider__slide_next">
-              <div class="customer-card">
-                <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
-                <p class="customer__name">Ann Lubin</p>
-                <p class="customer__role">CO-FUNDER</p>
-                <p class="customer__review">
-                  Magnam aut dignissimos voluptatem dolores iste cumque. Doloribus quisquam quasi ducimus accusamus
-                  praesentium.
-                </p>
-              </div>
-            </li>
-            <li class="slider__slide">
-              <div class="customer-card">
-                <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
-                <p class="customer__name">Ann Lubin</p>
-                <p class="customer__role">CO-FUNDER</p>
-                <p class="customer__review">
-                  A aspernatur eum quaerat voluptates blanditiis voluptas exercitationem ab rerum? Expedita, quo ipsam?
-                </p>
-              </div>
-            </li>
-            <li class="slider__slide">
-              <div class="customer-card">
-                <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
-                <p class="customer__name">Ann Lubin</p>
-                <p class="customer__role">CO-FUNDER</p>
-                <p class="customer__review">
-                  Expedita, molestiae sint, inventore in consectetur incidunt tenetur quo veritatis facilis ad fugit?
-                </p>
-              </div>
-            </li>
-            <li class="slider__slide slider__slide_prev">
-              <div class="customer-card">
-                <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
-                <p class="customer__name">Ann Lubin</p>
-                <p class="customer__role">CO-FUNDER</p>
-                <p class="customer__review">
-                  Excepturi quasi quos voluptatem atque nulla cum magni repellendus eligendi dolores. Eaque, eos?
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <ul class="slider">
+          <li class="slider__slide slider__slide_active">
+            <div class="customer-card">
+              <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
+              <p class="customer__name">Ann Lubin</p>
+              <p class="customer__role">CO-FUNDER</p>
+              <p class="customer__review">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolorum vitae ullam assumenda?
+              </p>
+            </div>
+          </li>
+          <li class="slider__slide slider__slide_next">
+            <div class="customer-card">
+              <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
+              <p class="customer__name">Ann Lubin</p>
+              <p class="customer__role">CO-FUNDER</p>
+              <p class="customer__review">
+                Magnam aut dignissimos voluptatem dolores iste cumque. Doloribus quisquam quasi ducimus accusamus
+                praesentium.
+              </p>
+            </div>
+          </li>
+          <li class="slider__slide">
+            <div class="customer-card">
+              <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
+              <p class="customer__name">Ann Lubin</p>
+              <p class="customer__role">CO-FUNDER</p>
+              <p class="customer__review">
+                A aspernatur eum quaerat voluptates blanditiis voluptas exercitationem ab rerum? Expedita, quo ipsam?
+              </p>
+            </div>
+          </li>
+          <li class="slider__slide">
+            <div class="customer-card">
+              <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
+              <p class="customer__name">Ann Lubin</p>
+              <p class="customer__role">CO-FUNDER</p>
+              <p class="customer__review">
+                Expedita, molestiae sint, inventore in consectetur incidunt tenetur quo veritatis facilis ad fugit?
+              </p>
+            </div>
+          </li>
+          <li class="slider__slide slider__slide_prev">
+            <div class="customer-card">
+              <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
+              <p class="customer__name">Ann Lubin</p>
+              <p class="customer__role">CO-FUNDER</p>
+              <p class="customer__review">
+                Excepturi quasi quos voluptatem atque nulla cum magni repellendus eligendi dolores. Eaque, eos?
+              </p>
+            </div>
+          </li>
+        </ul>
         <ul class="slider-navigation">
           <li class="slider-navigation__point slider-navigation__point_active">
             <button class="slider-navigation__button"></button>
@@ -243,99 +247,107 @@
         </ul>
       </section>
       <section class="section blog-section">
-        <h2 class="section__title">Our recent blog</h2>
-        <p class="section__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
-        </p>
-        <ul class="blog-list">
-          <li class="blog-card">
-            <img class="blog-card__img" height="228" src="assets/blog-1.jpeg" alt="blog image" />
-            <div class="blog-card__content">
-              <h3 class="blog-card__title">The Snap Pixel: How It Works and How to Install</h3>
-              <p class="blog-card__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus
-                vitae, nullam lobortis enim.
-              </p>
-              <a class="blog-card__link" href="#">read more</a>
-            </div>
-          </li>
-          <li class="blog-card">
-            <img class="blog-card__img" height="228" src="assets/blog-2.jpeg" alt="blog image" />
-            <div class="blog-card__content">
-              <h3 class="blog-card__title">Global Partner Solutions: A Partnership of Innovation</h3>
-              <p class="blog-card__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus
-                vitae, nullam lobortis enim.
-              </p>
-              <a class="blog-card__link" href="#">read more</a>
-            </div>
-          </li>
-          <li class="blog-card">
-            <img class="blog-card__img" height="228" src="assets/blog-3.jpeg" alt="blog image" />
-            <div class="blog-card__content">
-              <h3 class="blog-card__title">2021: An opportunity for Snapchatters to start fresh</h3>
-              <p class="blog-card__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus
-                vitae, nullam lobortis enim.
-              </p>
-              <a class="blog-card__link" href="#">read more</a>
-            </div>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section__title">Our recent blog</h2>
+          <p class="section__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
+          </p>
+          <ul class="blog-list">
+            <li class="blog-card">
+              <img class="blog-card__img" height="228" src="assets/blog-1.jpeg" alt="blog image" />
+              <div class="blog-card__content">
+                <h3 class="blog-card__title">The Snap Pixel: How It Works and How to Install</h3>
+                <p class="blog-card__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus
+                  vitae, nullam lobortis enim.
+                </p>
+                <a class="blog-card__link" href="#">read more</a>
+              </div>
+            </li>
+            <li class="blog-card">
+              <img class="blog-card__img" height="228" src="assets/blog-2.jpeg" alt="blog image" />
+              <div class="blog-card__content">
+                <h3 class="blog-card__title">Global Partner Solutions: A Partnership of Innovation</h3>
+                <p class="blog-card__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus
+                  vitae, nullam lobortis enim.
+                </p>
+                <a class="blog-card__link" href="#">read more</a>
+              </div>
+            </li>
+            <li class="blog-card">
+              <img class="blog-card__img" height="228" src="assets/blog-3.jpeg" alt="blog image" />
+              <div class="blog-card__content">
+                <h3 class="blog-card__title">2021: An opportunity for Snapchatters to start fresh</h3>
+                <p class="blog-card__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus
+                  vitae, nullam lobortis enim.
+                </p>
+                <a class="blog-card__link" href="#">read more</a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__contacts">
-        <div class="footer__contact">
-          <div class="contacts__image">
-            <img height="20" src="/assets/icons/mail-icon.svg" alt="email" />
-          </div>
-          <a class="contacts__link" href="mailto:info.design@gmail.com">info.design@gmail.com</a>
+      <div class="container">
+        <div class="footer__contacts">
+          <a class="footer__contact" href="mailto:info.design@gmail.com">
+            <div class="contacts__image">
+              <img height="20" src="/assets/icons/mail-icon.svg" alt="email" />
+            </div>
+            info.design@gmail.com
+          </a>
+          <a href="tel:+8803216559985" class="footer__contact">
+            <div class="contacts__image">
+              <img height="20" src="assets/icons/contact-phone-icon.svg" alt="phone" />
+            </div>
+            +880 321 655 9985
+          </a>
         </div>
-        <div class="footer__contact">
-          <div class="contacts__image">
-            <img height="20" src="assets/icons/contact-phone-icon.svg" alt="phone" />
-          </div>
-          <a class="contacts__link" href="tel:+8803216559985">+880 321 655 9985</a>
+        <a class="footer__logo" href="#">
+          <img height="20" src="assets/logo.png" alt="logo" />
+        </a>
+        <p class="footer__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
+          nullam lobortis enim.
+        </p>
+        <ul class="footer__links">
+          <li class="footer__link">
+            <a href=""><img src="assets/icons/facebook-icon.svg" alt="facebook" /></a>
+          </li>
+          <li class="footer__link">
+            <a href=""><img src="assets/icons/instagram-icon.svg" alt="instagram" /></a>
+          </li>
+          <li class="footer__link">
+            <a href=""><img src="assets/icons/twitter-icon.svg" alt="twitter" /></a>
+          </li>
+          <li class="footer__link">
+            <a href=""><img src="assets/icons/youtube-icon.svg" alt="youtube" /></a>
+          </li>
+        </ul>
+        <h3 class="footer__subtitle">quick link</h3>
+        <nav>
+          <ul class="footer__quick-links">
+            <li><a class="footer__quick-link" href="#">About</a></li>
+            <li><a class="footer__quick-link" href="#">Features</a></li>
+            <li><a class="footer__quick-link" href="#">Screenshot</a></li>
+            <li><a class="footer__quick-link" href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <h3 class="footer__subtitle newsletter-title">news letter</h3>
+        <p class="footer__description">Subscribe our newsletter to get our latest update & news</p>
+        <form class="newsletter">
+          <input class="newsletter__input" type="email" placeholder="Your email address" />
+          <button class="newsletter__button" type="submit">
+            <img height="24" src="assets/icons/send-icon.svg" alt="send" />
+          </button>
+        </form>
+        <div class="footer__copyright">
+          <img height="18" src="assets/icons/copyright-icon.svg" alt="copyright" />
+          <p>Copyright 2021 .Ojjomedia. All Right Reserved.</p>
         </div>
-      </div>
-      <h2 class="footer__title">Logo</h2>
-      <p class="footer__description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam
-        lobortis enim.
-      </p>
-      <ul class="footer__links">
-        <li class="footer__link">
-          <a href=""><img src="assets/icons/facebook-icon.svg" alt="facebook" /></a>
-        </li>
-        <li class="footer__link">
-          <a href=""><img src="assets/icons/instagram-icon.svg" alt="instagram" /></a>
-        </li>
-        <li class="footer__link">
-          <a href=""><img src="assets/icons/twitter-icon.svg" alt="twitter" /></a>
-        </li>
-        <li class="footer__link">
-          <a href=""><img src="assets/icons/youtube-icon.svg" alt="youtube" /></a>
-        </li>
-      </ul>
-      <h3 class="footer__subtitle">quick link</h3>
-      <ul class="footer__quick-links">
-        <li><a class="footer__quick-link" href="#">About</a></li>
-        <li><a class="footer__quick-link" href="#">Features</a></li>
-        <li><a class="footer__quick-link" href="#">Screenshot</a></li>
-        <li><a class="footer__quick-link" href="#">Blog</a></li>
-      </ul>
-      <h3 class="footer__subtitle newsletter-title">news letter</h3>
-      <p class="footer__description">Subscribe our newsletter to get our latest update & news</p>
-      <form class="newsletter">
-        <input class="newsletter__input" type="email" placeholder="Your email address" />
-        <button class="newsletter__button" type="submit">
-          <img height="24" src="assets/icons/send-icon.svg" alt="send" />
-        </button>
-      </form>
-      <div class="footer__copyright">
-        <img height="18" src="assets/icons/copyright-icon.svg" alt="copyright" />
-        <p>Copyright 2021 .Ojjomedia. All Right Reserved.</p>
       </div>
     </footer>
   </body>

@@ -49,12 +49,14 @@ img {
   display: block;
 }
 
+.container {
+  padding-inline: 16px;
+  max-width: 1440px;
+  margin: auto;
+}
+
 .header {
-  background-color: white;
-  margin: 40px 16px 0;
-  padding: 3px;
-  border-radius: 3px;
-  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
   position: relative;
   z-index: 100;
 }
@@ -63,6 +65,10 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
+  background-color: white;
+  padding: 3px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .header__collapse-nav {
@@ -140,7 +146,7 @@ img {
 .hero {
   background-color: white;
   padding: 30px 18px 20px 18px;
-  margin: calc(128px + 90px) 36px 60px 16px;
+  margin: calc(128px + 90px) 20px 60px 0;
   position: relative;
 }
 
@@ -195,7 +201,7 @@ img {
 .section__description {
   font-size: 1.6rem;
   text-align: center;
-  margin: 0 38px 40px;
+  margin-bottom: 40px;
   color: var(--text-secondary);
 }
 
@@ -224,7 +230,6 @@ img {
 
 .about-app-list {
   list-style: none;
-  padding-inline: 16px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -233,17 +238,16 @@ img {
 }
 
 .about-app-list-item {
-  display: flex;
-  gap: 18px;
-  padding: 18px 16px 10px 18px;
+  padding: 18px 16px 10px 52px;
   border-radius: 10px;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .about-app-list-item::before {
   content: "";
-  display: block;
-  flex-shrink: 0;
+  position: absolute;
+  left: 16px;
   height: 24px;
   width: 24px;
   background-image: url("/assets/icons/checkmark.svg");
@@ -269,7 +273,7 @@ img {
   flex-direction: column;
   align-items: center;
   list-style: none;
-  padding-inline: 76px;
+  padding-inline: 60px;
   gap: 40px;
   text-align: center;
 }
@@ -299,7 +303,11 @@ img {
 }
 
 .download-section {
-  padding: 103px 16px 60px;
+  padding-top: 103px;
+}
+
+.download-section .container {
+  max-width: 380px;
 }
 
 .download-section .section__title {
@@ -370,7 +378,6 @@ img {
   top: 75px;
   margin-top: -75px;
   height: 150px;
-  margin-inline: 16px;
   border-radius: 10px;
   box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.24);
   background: linear-gradient(0deg, rgba(88, 81, 234, 0.4) 0%, rgba(88, 81, 234, 0.4) 100%),
@@ -395,10 +402,6 @@ img {
 
 .customers-section {
   overflow-x: hidden;
-}
-
-.slider-wrapper {
-  padding-inline: 16px;
 }
 
 .slider {
@@ -509,7 +512,6 @@ img {
   display: flex;
   flex-direction: column;
   list-style: none;
-  margin-inline: 16px;
   gap: 40px;
 }
 
@@ -553,7 +555,6 @@ img {
 .footer {
   background-color: var(--text-main);
   color: white;
-  padding-inline: 16px;
 }
 
 .footer__contacts {
@@ -573,7 +574,14 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
   position: relative;
+  color: var(--text-main);
+  font-size: 2rem;
+  margin-top: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .footer__contact:first-child::after {
@@ -592,22 +600,14 @@ img {
   background-color: var(--text-accent);
   border-radius: 100%;
   padding: 15px;
-  margin: auto;
 }
 
-.contacts__link {
-  color: var(--text-main);
-  font-size: 2rem;
-  margin-top: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.footer__title {
-  font-size: 3.125rem;
-  text-transform: uppercase;
-  margin-top: 60px;
+.footer__logo {
+  display: inline-block;
+  margin-block: 60px 16px;
+  background-color: white;
+  padding: 24px 10px;
+  border-radius: 5px;
 }
 
 .footer__description {
