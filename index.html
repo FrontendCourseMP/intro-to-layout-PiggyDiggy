@@ -8,8 +8,8 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
+    <header class="header container">
+      <div class="header__content">
         <nav class="header__nav">
           <button class="header__expand-button">
             <img src="assets/icons/burger-icon.svg" alt="burger-icon" />
@@ -19,13 +19,17 @@
             <li><a href="/">About</a></li>
             <li><a href="/">Features</a></li>
           </ul>
-          <a class="header__logo" href="/"><img class="logo__image" src="assets/logo.png" alt="logo" /></a>
-          <ul class="header__collapse-nav">
-            <li><a href="/">Screenshot</a></li>
-            <li><a href="/">Blog</a></li>
-          </ul>
-          <a href="#" class="header__btn">Download</a>
         </nav>
+        <a class="header__logo" href="/"><img class="logo__image" src="assets/logo.png" alt="logo" /></a>
+        <div class="header__right">
+          <nav class="header__nav">
+            <ul class="header__collapse-nav">
+              <li><a href="/">Screenshot</a></li>
+              <li><a href="/">Blog</a></li>
+            </ul>
+          </nav>
+          <a href="#" class="header__btn">Download</a>
+        </div>
       </div>
     </header>
     <main>
