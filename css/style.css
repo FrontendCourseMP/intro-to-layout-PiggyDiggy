@@ -767,10 +767,10 @@ img {
   }
 
   .hero-section {
-    margin-top: -155px;
+    margin-top: -151px;
     min-height: 100vh;
     display: flex;
-    padding-block: 155px 0;
+    padding-block: 191px 40px;
   }
 
   .section__title {
@@ -969,6 +969,11 @@ img {
 
   .pre-header {
     margin-bottom: 15px;
+  }
+
+  .hero-section {
+    padding-block: 175px 40px;
+    margin-top: -135px;
   }
 
   .hero {
