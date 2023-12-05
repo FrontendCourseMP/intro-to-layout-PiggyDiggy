@@ -9,23 +9,41 @@
   </head>
   <body>
     <header class="header container">
+      <div class="pre-header">
+        <a class="pre-header__link" href="mailto:info@youremail.com">
+          <img height="18" src="assets/icons/mail-icon.svg" alt="mail" />
+          info@youremail.com
+        </a>
+        <a class="pre-header__link" href="tel:4805530103">
+          <img height="18" src="assets/icons/contact-phone-icon.svg" alt="phone" />
+          (480) 555-0103
+        </a>
+        <ul class="pre-header__socials">
+          <li class="pre-header__social">
+            <img class="pre-header__facebook" height="20" src="assets/icons/facebook-icon.svg" alt="facebook" />
+          </li>
+          <li class="pre-header__social"><img height="20" src="assets/icons/instagram-icon.svg" alt="instagram" /></li>
+          <li class="pre-header__social"><img height="20" src="assets/icons/twitter-icon.svg" alt="twitter" /></li>
+          <li class="pre-header__social"><img height="20" src="assets/icons/youtube-icon.svg" alt="youtube" /></li>
+        </ul>
+      </div>
       <div class="header__content">
         <nav class="header__nav">
           <button class="header__expand-button">
             <img src="assets/icons/burger-icon.svg" alt="burger-icon" />
           </button>
           <ul class="header__collapse-nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Features</a></li>
+            <li class="collapse-nav__item"><a class="header__link header__link--active" href="/">Home</a></li>
+            <li class="collapse-nav__item"><a class="header__link" href="/">About</a></li>
+            <li class="collapse-nav__item"><a class="header__link" href="/">Features</a></li>
           </ul>
         </nav>
         <a class="header__logo" href="/"><img class="logo__image" src="assets/logo.png" alt="logo" /></a>
         <div class="header__right">
           <nav class="header__nav">
             <ul class="header__collapse-nav">
-              <li><a href="/">Screenshot</a></li>
-              <li><a href="/">Blog</a></li>
+              <li class="collapse-nav__item"><a class="header__link" href="/">Screenshot</a></li>
+              <li class="collapse-nav__item"><a class="header__link" href="/">Blog</a></li>
             </ul>
           </nav>
           <a href="#" class="header__btn">Download</a>
@@ -44,10 +62,14 @@
             <p class="hero__download">Download App Now</p>
             <ul class="download-links">
               <li>
-                <a href="/"><img height="34" src="assets/google-play.png" alt="google play" /></a>
+                <a class="hero__download-link" href="/">
+                  <img height="34" src="assets/google-play.png" alt="google play" />
+                </a>
               </li>
               <li>
-                <a href="/"><img height="34" src="assets/app-store.png" alt="app store" /></a>
+                <a class="hero__download-link" href="/">
+                  <img height="34" src="assets/app-store.png" alt="app store" />
+                </a>
               </li>
             </ul>
           </div>
@@ -60,25 +82,37 @@
         <div class="container">
           <h2 class="section__title">About Our App</h2>
           <p class="section__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, corrupti expedita voluptas id ea qui
+            reiciendis distinctio facere a amet?
           </p>
-          <div class="section__image section__image_drop-shadow">
-            <img height="324" src="assets/section2-phone.png" alt="phone" />
+          <div class="about-app__content">
+            <div class="section__image section__image_drop-shadow">
+              <img height="324" src="assets/section2-phone.png" alt="phone" />
+            </div>
+            <ul class="about-app-list">
+              <li class="about-app-list-item">
+                <h3 class="about-app__title">Creative design</h3>
+                <p class="about-app__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima dolore sequi eius autem
+                  nihil.
+                </p>
+              </li>
+              <li class="about-app-list-item">
+                <h3 class="about-app__title">easy to use</h3>
+                <p class="about-app__description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, praesentium dolore ipsam illo soluta
+                  magni!
+                </p>
+              </li>
+              <li class="about-app-list-item">
+                <h3 class="about-app__title">Best user experince</h3>
+                <p class="about-app__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatibus voluptas maiores
+                  dolores non est.
+                </p>
+              </li>
+            </ul>
           </div>
-          <ul class="about-app-list">
-            <li class="about-app-list-item">
-              <h3 class="about-app__title">Creative design</h3>
-              <p class="about-app__description">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
-            </li>
-            <li class="about-app-list-item">
-              <h3 class="about-app__title">easy to use</h3>
-              <p class="about-app__description">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
-            </li>
-            <li class="about-app-list-item">
-              <h3 class="about-app__title">Best user experince</h3>
-              <p class="about-app__description">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
-            </li>
-          </ul>
         </div>
       </section>
       <section class="section with-background app-features-section">
@@ -91,71 +125,87 @@
             <li class="app-feature">
               <img height="50" class="app-feature__icon" src="assets/icons/comments-icon.svg" alt="" />
               <h3 class="app-feature__title">Full free chat</h3>
-              <p class="app-feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="app-feature__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ratione error iste temporibus placeat
+                blanditiis.
+              </p>
             </li>
-            <li class="app-feature">
+            <li class="app-feature app-feature--justify-end">
               <img height="50" class="app-feature__icon" src="assets/icons/features-icon.svg" alt="" />
               <h3 class="app-feature__title">unlimited features</h3>
-              <p class="app-feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="app-feature__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fuga maiores itaque.
+              </p>
             </li>
-            <li class="app-feature">
+            <li class="app-feature app-feature--justify-start">
               <img height="50" class="app-feature__icon" src="assets/icons/feather-icon.svg" alt="" />
               <h3 class="app-feature__title">awesome ui design</h3>
-              <p class="app-feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="app-feature__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quaerat quidem quos earum.
+              </p>
             </li>
-            <li class="app-feature">
+            <li class="app-feature app-features__image-container">
               <img class="app-features__image" height="468" src="assets/section3-phone.png" alt="" />
             </li>
-            <li class="app-feature">
+            <li class="app-feature app-feature--justify-end">
               <img height="50" class="app-feature__icon" src="assets/icons/phone-icon.svg" alt="" />
               <h3 class="app-feature__title">iso & android version</h3>
-              <p class="app-feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="app-feature__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dolorem dolores culpa voluptatum
+                laborum.
+              </p>
             </li>
-            <li class="app-feature">
+            <li class="app-feature app-feature--justify-start">
               <img height="50" class="app-feature__icon" src="assets/icons/retina-icon.svg" alt="" />
               <h3 class="app-feature__title">retina ready graphics</h3>
-              <p class="app-feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="app-feature__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, pariatur!
+              </p>
             </li>
             <li class="app-feature">
               <img height="50" class="app-feature__icon" src="assets/icons/person-icon.svg" alt="" />
               <h3 class="app-feature__title">24/7 support by real pepole</h3>
-              <p class="app-feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="app-feature__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, aliquid!
+              </p>
             </li>
           </ul>
         </div>
       </section>
       <section class="section download-section">
         <div class="container">
-          <h2 class="section__title">Download App Now</h2>
-          <p class="section__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
-            nullam lobortis enim.
-          </p>
-          <ul class="download-links">
-            <li>
-              <a href="/"><img height="45" src="assets/google-play.png" alt="google play" /></a>
-            </li>
-            <li>
-              <a href="/"><img height="45" src="assets/app-store.png" alt="app store" /></a>
-            </li>
-          </ul>
-          <ul class="app-stats">
-            <li class="app-stats__item">
-              <img height="18" class="app-stat__image" src="assets/icons/download-icon.svg" alt="download" />
-              <p class="app-stat__count">59865</p>
-              <p class="app-stat__description">Download</p>
-            </li>
-            <li class="app-stats__item">
-              <img height="18" class="app-stat__image" src="assets/icons/like-icon.svg" alt="like" />
-              <p class="app-stat__count">29852</p>
-              <p class="app-stat__description">Like</p>
-            </li>
-            <li class="app-stats__item">
-              <img height="18" class="app-stat__image" src="assets/icons/star-icon.svg" alt="star" />
-              <p class="app-stat__count">1500</p>
-              <p class="app-stat__description">5 star rating</p>
-            </li>
-          </ul>
+          <div>
+            <h2 class="section__title">Download App Now</h2>
+            <p class="section__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
+              nullam lobortis enim.
+            </p>
+            <ul class="download-links">
+              <li>
+                <a href="/"><img height="45" src="assets/google-play.png" alt="google play" /></a>
+              </li>
+              <li>
+                <a href="/"><img height="45" src="assets/app-store.png" alt="app store" /></a>
+              </li>
+            </ul>
+            <ul class="app-stats">
+              <li class="app-stats__item">
+                <img height="18" class="app-stat__image" src="assets/icons/download-icon.svg" alt="download" />
+                <p class="app-stat__count">59865</p>
+                <p class="app-stat__description">Download</p>
+              </li>
+              <li class="app-stats__item">
+                <img height="18" class="app-stat__image" src="assets/icons/like-icon.svg" alt="like" />
+                <p class="app-stat__count">29852</p>
+                <p class="app-stat__description">Like</p>
+              </li>
+              <li class="app-stats__item">
+                <img height="18" class="app-stat__image" src="assets/icons/star-icon.svg" alt="star" />
+                <p class="app-stat__count">1500</p>
+                <p class="app-stat__description">5 star rating</p>
+              </li>
+            </ul>
+          </div>
           <div class="section__image section__image_drop-shadow">
             <img height="310" src="assets/app-stats-image.png" alt="phone" />
           </div>
@@ -175,82 +225,84 @@
         </div>
       </section>
       <section class="section with-background customers-section">
-        <h2 class="section__title">Our Happy Customers</h2>
-        <p class="section__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
-        </p>
-        <ul class="slider">
-          <li class="slider__slide slider__slide_active">
-            <div class="customer-card">
-              <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
-              <p class="customer__name">Ann Lubin</p>
-              <p class="customer__role">CO-FUNDER</p>
-              <p class="customer__review">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolorum vitae ullam assumenda?
-              </p>
-            </div>
-          </li>
-          <li class="slider__slide slider__slide_next">
-            <div class="customer-card">
-              <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
-              <p class="customer__name">Ann Lubin</p>
-              <p class="customer__role">CO-FUNDER</p>
-              <p class="customer__review">
-                Magnam aut dignissimos voluptatem dolores iste cumque. Doloribus quisquam quasi ducimus accusamus
-                praesentium.
-              </p>
-            </div>
-          </li>
-          <li class="slider__slide">
-            <div class="customer-card">
-              <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
-              <p class="customer__name">Ann Lubin</p>
-              <p class="customer__role">CO-FUNDER</p>
-              <p class="customer__review">
-                A aspernatur eum quaerat voluptates blanditiis voluptas exercitationem ab rerum? Expedita, quo ipsam?
-              </p>
-            </div>
-          </li>
-          <li class="slider__slide">
-            <div class="customer-card">
-              <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
-              <p class="customer__name">Ann Lubin</p>
-              <p class="customer__role">CO-FUNDER</p>
-              <p class="customer__review">
-                Expedita, molestiae sint, inventore in consectetur incidunt tenetur quo veritatis facilis ad fugit?
-              </p>
-            </div>
-          </li>
-          <li class="slider__slide slider__slide_prev">
-            <div class="customer-card">
-              <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
-              <p class="customer__name">Ann Lubin</p>
-              <p class="customer__role">CO-FUNDER</p>
-              <p class="customer__review">
-                Excepturi quasi quos voluptatem atque nulla cum magni repellendus eligendi dolores. Eaque, eos?
-              </p>
-            </div>
-          </li>
-        </ul>
-        <ul class="slider-navigation">
-          <li class="slider-navigation__point slider-navigation__point_active">
-            <button class="slider-navigation__button"></button>
-          </li>
-          <li class="slider-navigation__point">
-            <button class="slider-navigation__button"></button>
-          </li>
-          <li class="slider-navigation__point">
-            <button class="slider-navigation__button"></button>
-          </li>
-          <li class="slider-navigation__point">
-            <button class="slider-navigation__button"></button>
-          </li>
-          <li class="slider-navigation__point">
-            <button class="slider-navigation__button"></button>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section__title">Our Happy Customers</h2>
+          <p class="section__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
+          </p>
+          <ul class="slider">
+            <li class="slider__slide slider__slide_active">
+              <div class="customer-card">
+                <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
+                <p class="customer__name">Ann Lubin</p>
+                <p class="customer__role">CO-FUNDER</p>
+                <p class="customer__review">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolorum vitae ullam assumenda?
+                </p>
+              </div>
+            </li>
+            <li class="slider__slide slider__slide_next">
+              <div class="customer-card">
+                <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
+                <p class="customer__name">Ann Lubin</p>
+                <p class="customer__role">CO-FUNDER</p>
+                <p class="customer__review">
+                  Magnam aut dignissimos voluptatem dolores iste cumque. Doloribus quisquam quasi ducimus accusamus
+                  praesentium.
+                </p>
+              </div>
+            </li>
+            <li class="slider__slide">
+              <div class="customer-card">
+                <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
+                <p class="customer__name">Ann Lubin</p>
+                <p class="customer__role">CO-FUNDER</p>
+                <p class="customer__review">
+                  A aspernatur eum quaerat voluptates blanditiis voluptas exercitationem ab rerum? Expedita, quo ipsam?
+                </p>
+              </div>
+            </li>
+            <li class="slider__slide">
+              <div class="customer-card">
+                <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
+                <p class="customer__name">Ann Lubin</p>
+                <p class="customer__role">CO-FUNDER</p>
+                <p class="customer__review">
+                  Expedita, molestiae sint, inventore in consectetur incidunt tenetur quo veritatis facilis ad fugit?
+                </p>
+              </div>
+            </li>
+            <li class="slider__slide slider__slide_prev">
+              <div class="customer-card">
+                <img class="customer__photo" height="50" src="assets/customer-photo.jpeg" alt="photo" />
+                <p class="customer__name">Ann Lubin</p>
+                <p class="customer__role">CO-FUNDER</p>
+                <p class="customer__review">
+                  Excepturi quasi quos voluptatem atque nulla cum magni repellendus eligendi dolores. Eaque, eos?
+                </p>
+              </div>
+            </li>
+          </ul>
+          <ul class="slider-navigation">
+            <li class="slider-navigation__point slider-navigation__point_active">
+              <button class="slider-navigation__button"></button>
+            </li>
+            <li class="slider-navigation__point">
+              <button class="slider-navigation__button"></button>
+            </li>
+            <li class="slider-navigation__point">
+              <button class="slider-navigation__button"></button>
+            </li>
+            <li class="slider-navigation__point">
+              <button class="slider-navigation__button"></button>
+            </li>
+            <li class="slider-navigation__point">
+              <button class="slider-navigation__button"></button>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="section blog-section">
+      <section class="section">
         <div class="container">
           <h2 class="section__title">Our recent blog</h2>
           <p class="section__description">
@@ -303,6 +355,7 @@
             </div>
             info.design@gmail.com
           </a>
+          <div class="footer__contacts-separator"></div>
           <a href="tel:+8803216559985" class="footer__contact">
             <div class="contacts__image">
               <img height="20" src="assets/icons/contact-phone-icon.svg" alt="phone" />
@@ -310,44 +363,52 @@
             +880 321 655 9985
           </a>
         </div>
-        <a class="footer__logo" href="#">
-          <img height="20" src="assets/logo.png" alt="logo" />
-        </a>
-        <p class="footer__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
-          nullam lobortis enim.
-        </p>
-        <ul class="footer__links">
-          <li class="footer__link">
-            <a href=""><img src="assets/icons/facebook-icon.svg" alt="facebook" /></a>
-          </li>
-          <li class="footer__link">
-            <a href=""><img src="assets/icons/instagram-icon.svg" alt="instagram" /></a>
-          </li>
-          <li class="footer__link">
-            <a href=""><img src="assets/icons/twitter-icon.svg" alt="twitter" /></a>
-          </li>
-          <li class="footer__link">
-            <a href=""><img src="assets/icons/youtube-icon.svg" alt="youtube" /></a>
-          </li>
-        </ul>
-        <h3 class="footer__subtitle">quick link</h3>
-        <nav>
-          <ul class="footer__quick-links">
-            <li><a class="footer__quick-link" href="#">About</a></li>
-            <li><a class="footer__quick-link" href="#">Features</a></li>
-            <li><a class="footer__quick-link" href="#">Screenshot</a></li>
-            <li><a class="footer__quick-link" href="#">Blog</a></li>
-          </ul>
-        </nav>
-        <h3 class="footer__subtitle newsletter-title">news letter</h3>
-        <p class="footer__description">Subscribe our newsletter to get our latest update & news</p>
-        <form class="newsletter">
-          <input class="newsletter__input" type="email" placeholder="Your email address" />
-          <button class="newsletter__button" type="submit">
-            <img height="24" src="assets/icons/send-icon.svg" alt="send" />
-          </button>
-        </form>
+        <div class="footer__content">
+          <div class="footer__row">
+            <a class="footer__logo" href="#">
+              <img height="20" src="assets/logo.png" alt="logo" />
+            </a>
+            <p class="footer__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
+              nullam lobortis enim.
+            </p>
+            <ul class="footer__links">
+              <li class="footer__link">
+                <a href=""><img src="assets/icons/facebook-icon.svg" alt="facebook" /></a>
+              </li>
+              <li class="footer__link">
+                <a href=""><img src="assets/icons/instagram-icon.svg" alt="instagram" /></a>
+              </li>
+              <li class="footer__link">
+                <a href=""><img src="assets/icons/twitter-icon.svg" alt="twitter" /></a>
+              </li>
+              <li class="footer__link">
+                <a href=""><img src="assets/icons/youtube-icon.svg" alt="youtube" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__row">
+            <h3 class="footer__subtitle">quick link</h3>
+            <nav>
+              <ul class="footer__quick-links">
+                <li><a class="footer__quick-link" href="#">About</a></li>
+                <li><a class="footer__quick-link" href="#">Features</a></li>
+                <li><a class="footer__quick-link" href="#">Screenshot</a></li>
+                <li><a class="footer__quick-link" href="#">Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__row">
+            <h3 class="footer__subtitle newsletter-title">news letter</h3>
+            <p class="footer__description">Subscribe our newsletter to get our latest update & news</p>
+            <form class="newsletter">
+              <input class="newsletter__input" type="email" placeholder="Your email address" />
+              <button class="newsletter__button" type="submit">
+                <img height="24" src="assets/icons/send-icon.svg" alt="send" />
+              </button>
+            </form>
+          </div>
+        </div>
         <div class="footer__copyright">
           <img height="18" src="assets/icons/copyright-icon.svg" alt="copyright" />
           <p>Copyright 2021 .Ojjomedia. All Right Reserved.</p>
