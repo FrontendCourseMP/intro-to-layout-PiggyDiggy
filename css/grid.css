@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.mondiran-section {
+  display: flex;
+}
+
+.mondrian {
+  aspect-ratio: 1 / 1;
+  width: calc(100vmin - 40px);
+  margin: auto;
+  background-color: black;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 20% 35% 1fr 1fr;
+  grid-template-rows: 5% 1fr 1fr 15%;
+  gap: calc(1vw + 1vh);
+}
+
+.mondrian__part:first-child {
+  background-color: white;
+  grid-column: span 2;
+}
+
+.mondrian__part:nth-child(2) {
+  background-color: #ffcf33;
+  grid-column: span 2;
+}
+
+.mondrian__part:nth-child(3) {
+  background-color: #f13838;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.mondrian__part:nth-child(4) {
+  background-color: #ffcf33;
+  grid-column: span 2;
+}
+
+.mondrian__part:nth-child(5) {
+  background-color: white;
+}
+
+.mondrian__part:nth-child(6) {
+  background-color: white;
+}
+
+.mondrian__part:nth-child(7) {
+  grid-column: 2 / 3;
+  background-color: white;
+}
+
+.mondrian__part:last-child {
+  background-color: white;
+  grid-column: span 2;
+}
+
+.dashboard-section {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  padding: 20px 0;
+}
+
+aside {
+  background-color: #444cf7;
+  color: white;
+}
+
+.charts {
+  display: grid;
+  grid-template-areas:
+    "chart1 chart1 chart1 chart1 chart1 chart1"
+    "chart2 chart2 chart3 chart3 chart4 chart4"
+    "chart5 chart5 chart5 chart6 chart6 chart6";
+  gap: 36px 52px;
+  background-color: #f5f5f5;
+  padding: 52px;
+}
+
+.chart {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chart img {
+  display: block;
+}
+
+.chart:first-child {
+  grid-area: chart1;
+}
+
+.chart:nth-child(2) {
+  grid-area: chart2;
+}
+
+.chart:nth-child(3) {
+  grid-area: chart3;
+}
+
+.chart:nth-child(4) {
+  grid-area: chart4;
+}
+
+.chart:nth-child(5) {
+  grid-area: chart5;
+}
+
+.chart:last-child {
+  grid-area: chart6;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 32px;
+}
+
+.gallery__image {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.1);
+  border: 4px dashed #444cf7;
+}
+
+.gallery__image:first-child {
+  padding-left: 140px;
+}
