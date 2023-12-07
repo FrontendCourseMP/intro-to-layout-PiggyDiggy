@@ -808,6 +808,10 @@ img {
   font-size: 1.6rem;
   padding-left: 16px;
   border-radius: 4px;
+  color: var(--text-main);
+}
+
+.newsletter__input::placeholder {
   color: var(--text-secondary);
 }
 

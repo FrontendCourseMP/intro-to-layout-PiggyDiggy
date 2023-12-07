@@ -36,6 +36,7 @@ main {
 .form__label {
   display: block;
   font-size: 1.4rem;
+  transition: color 0.1s ease-out;
 }
 
 .form__label + .form__label {
@@ -50,6 +51,10 @@ main {
 
 .form__label__required {
   color: firebrick;
+}
+
+.form__label:focus-within {
+  color: var(--text-accent);
 }
 
 .form__input {
@@ -113,6 +118,59 @@ main {
   color: var(--text-accent);
 }
 
+.form__description-title {
+  font-weight: bold;
+}
+
+.form__description-title::first-letter {
+  color: firebrick;
+}
+
+.form__description-details {
+  margin-inline-start: 40px;
+}
+
+.form__description-details::before {
+  content: "\1F6C8";
+}
+
+.form2__fieldset {
+  border: 1px solid var(--text-main);
+}
+
+.form__checkbox-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+}
+
+.form__checkbox-label {
+  display: flex;
+  gap: 4px;
+}
+
+.form__checkbox:checked + span {
+  text-decoration: line-through;
+  color: var(--text-secondary);
+}
+
+.pseudoclasses li:nth-child(2n) span {
+  color: var(--text-accent);
+}
+
+.pseudoclasses li:nth-child(2n) .form__checkbox:checked {
+  accent-color: var(--text-accent);
+}
+
+.pseudoelements li:nth-child(2n + 1) span {
+  color: var(--text-accent);
+}
+
+.pseudoelements li:nth-child(2n + 1) .form__checkbox:checked {
+  accent-color: var(--text-accent);
+}
+
 .footer {
   background: var(--text-main);
 }
@@ -120,6 +178,10 @@ main {
 .footer__subtitle,
 .footer__logo {
   margin-top: 32px;
+}
+
+.footer__logo {
+  transform: rotate(30deg) scale(1.5) skew(30deg);
 }
 
 @media screen and (min-width: 764px) {

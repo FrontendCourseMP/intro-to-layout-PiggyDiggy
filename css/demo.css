@@ -1,0 +1,108 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.card {
+  margin-top: 32px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.card__front,
+.card__back {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  width: 300px;
+  background-color: var(--text-accent);
+  color: white;
+  padding: 16px;
+  text-align: center;
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  backface-visibility: hidden;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card__back {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(180deg);
+}
+
+.card:hover .card__front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .card__back {
+  transform: rotateY(0);
+}
+
+.marquee {
+  max-width: 100%;
+  margin-top: 64px;
+}
+
+.marquee__inner {
+  display: flex;
+  gap: 32px;
+  width: max-content;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee__inner div {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+}
+
+.marquee__inner div:nth-child(1),
+.marquee__inner div:nth-child(11) {
+  background-color: hsl(0deg, 77%, 63%);
+}
+
+.marquee__inner div:nth-child(2),
+.marquee__inner div:nth-child(12) {
+  background-color: hsl(36deg, 77%, 63%);
+}
+
+.marquee__inner div:nth-child(3),
+.marquee__inner div:nth-child(13) {
+  background-color: hsl(72deg, 77%, 63%);
+}
+.marquee__inner div:nth-child(4),
+.marquee__inner div:nth-child(14) {
+  background-color: hsl(108deg, 77%, 63%);
+}
+.marquee__inner div:nth-child(5),
+.marquee__inner div:nth-child(15) {
+  background-color: hsl(144deg, 77%, 63%);
+}
+.marquee__inner div:nth-child(6),
+.marquee__inner div:nth-child(16) {
+  background-color: hsl(180deg, 77%, 63%);
+}
+.marquee__inner div:nth-child(7),
+.marquee__inner div:nth-child(17) {
+  background-color: hsl(216deg, 77%, 63%);
+}
+.marquee__inner div:nth-child(8),
+.marquee__inner div:nth-child(18) {
+  background-color: hsl(252deg, 77%, 63%);
+}
+.marquee__inner div:nth-child(9),
+.marquee__inner div:nth-child(19) {
+  background-color: hsl(288deg, 77%, 63%);
+}
+.marquee__inner div:nth-child(10),
+.marquee__inner div:nth-child(20) {
+  background-color: hsl(324deg, 77%, 63%);
+}
+
+@keyframes marquee {
+  100% {
+    translate: calc(-50% - 16px);
+  }
+}
