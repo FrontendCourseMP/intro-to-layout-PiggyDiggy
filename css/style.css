@@ -29,10 +29,16 @@
       format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
+::selection {
+  background-color: var(--text-accent);
+  color: white;
+}
+
 :root {
   --text-main: #232233;
   --text-accent: #5956e9;
   --text-secondary: #6c6c72;
+  --accent-light: #7572ff;
   font-size: 62.5%;
 }
 
@@ -42,6 +48,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -58,6 +68,7 @@ img {
 .container {
   padding: 0 16px;
   max-width: 1250px;
+  width: 100%;
   margin: auto;
 }
 
@@ -81,6 +92,11 @@ img {
   gap: 18px;
   color: white;
   text-decoration: none;
+  transition: filter 0.1s ease-out;
+}
+
+.pre-header__link:hover {
+  filter: brightness(0.8);
 }
 
 .pre-header__socials {
@@ -92,6 +108,14 @@ img {
 
 .pre-header__facebook {
   filter: brightness(0) invert(1);
+}
+
+.pre-header__social {
+  transition: filter 0.1s ease-out;
+}
+
+.pre-header__social:hover {
+  filter: brightness(0.8);
 }
 
 .header__content {
@@ -118,10 +142,15 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 2rem;
+  transition: color 0.2s ease-out;
 }
 
 .header__link--active {
   text-decoration: underline;
+  color: var(--text-accent);
+}
+
+.header__link:hover {
   color: var(--text-accent);
 }
 
@@ -164,6 +193,16 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   color: white;
+  transition: filter 0.2s ease-out;
+}
+
+.header__btn:hover,
+.header__btn:focus {
+  filter: saturate(1.5);
+}
+
+.header__btn:active {
+  filter: saturate(3);
 }
 
 .section {
@@ -208,7 +247,7 @@ img {
   position: absolute;
   inset: -20px;
   left: 20px;
-  border: 10px solid #7572ff;
+  border: 10px solid var(--accent-light);
   z-index: -1;
 }
 
@@ -236,6 +275,15 @@ img {
   display: flex;
   gap: 10px;
   list-style-type: none;
+}
+
+.download-links img {
+  transition: scale 0.1s ease-out;
+}
+
+.download-links img:hover, 
+.download-links a:focus img {
+  scale: 1.05;
 }
 
 .section__image {
@@ -446,10 +494,16 @@ img {
   border-radius: 100%;
   display: flex;
   box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.7), 0 0 0 10px rgba(255, 255, 255, 0.6);
+  transition: scale 0.2s ease;
 }
 
 .usage-video__play-button img {
   margin: auto;
+}
+
+.usage-video:hover .usage-video__play-button,
+.usage-video:focus .usage-video__play-button {
+  scale: 1.1;
 }
 
 .customers-section {
@@ -552,6 +606,12 @@ img {
   border-radius: 100%;
   border: none;
   cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.slider-navigation__button:hover,
+.slider-navigation__button:focus {
+  background-color: white;
 }
 
 .blog-list {
@@ -565,6 +625,13 @@ img {
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
+  transition: scale 0.1s ease, box-shadow 0.1s ease;
+}
+
+.blog-card:hover,
+.blog-card:focus-within {
+  scale: 1.05;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .blog-card__img {
@@ -596,6 +663,11 @@ img {
   margin-top: 20px;
   display: block;
   color: var(--text-accent);
+  transition: filter 0.1s ease-out;
+}
+
+.blog-card__link:hover {
+  filter: brightness(0.7);
 }
 
 .footer {
@@ -644,6 +716,12 @@ img {
   background-color: var(--text-accent);
   border-radius: 100%;
   padding: 15px;
+  transition: background-color 0.2s ease;
+}
+
+.footer__contact:hover .contacts__image,
+.footer__contact:focus .contacts__image {
+  background-color: var(--accent-light);
 }
 
 .footer__logo {
@@ -652,6 +730,12 @@ img {
   background-color: white;
   padding: 24px 10px;
   border-radius: 5px;
+  transition: scale 0.1s ease;
+}
+
+.footer__logo:hover,
+.footer__logo:focus {
+  scale: 1.05;
 }
 
 .footer__description {
@@ -668,6 +752,18 @@ img {
 .footer__link:not(.footer__link:last-child) {
   padding-right: 30px;
   border-right: 1px solid white;
+}
+
+.footer__link a {
+  transition: filter 0.2s ease-out;
+}
+
+.footer__link a:hover {
+  filter: brightness(0.8);
+}
+
+.footer__link:first-child a:hover {
+  filter: brightness(1.2);
 }
 
 .footer__subtitle {
@@ -688,6 +784,11 @@ img {
   font-size: 1.6rem;
   color: white;
   text-decoration: none;
+  transition: filter 0.2s ease-out;
+}
+
+.footer__quick-link:hover {
+  filter: brightness(0.8);
 }
 
 .newsletter-title {
@@ -716,6 +817,13 @@ img {
   margin: 2px;
   padding: 12px;
   border: none;
+  transition: background-color 0.2s ease-out;
+  cursor: pointer;
+}
+
+.newsletter__button:hover,
+.newsletter__button:focus {
+  background-color: var(--accent-light);
 }
 
 .footer__copyright {
@@ -964,7 +1072,7 @@ img {
   }
 
   .header__nav {
-    margin-left: 52px;
+    margin-left: 28px;
   }
 
   .pre-header {

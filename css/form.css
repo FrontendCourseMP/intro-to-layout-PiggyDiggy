@@ -1,0 +1,129 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--text-accent);
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.form {
+  margin: 120px auto;
+  max-width: 550px;
+  background-color: white;
+  padding: 32px;
+  color: var(--text-main);
+  border-radius: 18px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form__title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.form__fieldset {
+  margin: 16px 0;
+  padding: 8px;
+  border: none;
+}
+
+.form__label {
+  display: block;
+  font-size: 1.4rem;
+}
+
+.form__label + .form__label {
+  margin-top: 16px;
+}
+
+.label__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+.form__label__required {
+  color: firebrick;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.6rem;
+  padding: 12px 8px;
+  border-radius: 10px;
+  border: 1px solid #999;
+  color: var(--text-main);
+}
+
+.form__input:focus {
+  outline-color: var(--text-accent);
+}
+
+.form__input:invalid {
+  border-color: firebrick;
+}
+
+.form__label__warning {
+  translate: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: translate 0.1s ease-in, opacity 0.1s ease-in, visibility 0.1s ease-out;
+}
+
+.form__label:has(.form__input:invalid) .form__label__warning {
+  translate: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: translate 0.1s ease-out, opacity 0.1s ease-out, visibility 0.1s ease-out;
+}
+
+.form__button {
+  display: block;
+  font: inherit;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.form__submit-button {
+  margin-top: 24px;
+  background-color: var(--text-accent);
+  color: white;
+  border-radius: 100vmax;
+  padding: 16px 32px;
+  transition: filter 0.2s ease-out;
+}
+
+.form__submit-button:hover {
+  filter: brightness(1.2);
+}
+
+.form__reset-button {
+  text-decoration: underline;
+  margin-top: 8px;
+  background: none;
+  color: var(--text-accent);
+}
+
+.footer {
+  background: var(--text-main);
+}
+
+.footer__subtitle,
+.footer__logo {
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 764px) {
+  .form__label {
+    font-size: 1.6rem;
+  }
+}

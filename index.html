@@ -20,11 +20,25 @@
         </a>
         <ul class="pre-header__socials">
           <li class="pre-header__social">
-            <img class="pre-header__facebook" height="20" src="assets/icons/facebook-icon.svg" alt="facebook" />
+            <a href="#">
+              <img class="pre-header__facebook" height="20" src="assets/icons/facebook-icon.svg" alt="facebook" />
+            </a>
           </li>
-          <li class="pre-header__social"><img height="20" src="assets/icons/instagram-icon.svg" alt="instagram" /></li>
-          <li class="pre-header__social"><img height="20" src="assets/icons/twitter-icon.svg" alt="twitter" /></li>
-          <li class="pre-header__social"><img height="20" src="assets/icons/youtube-icon.svg" alt="youtube" /></li>
+          <li class="pre-header__social">
+            <a href="#">
+              <img height="20" src="assets/icons/instagram-icon.svg" alt="instagram" />
+            </a>
+          </li>
+          <li class="pre-header__social">
+            <a href="#">
+              <img height="20" src="assets/icons/twitter-icon.svg" alt="twitter" />
+            </a>
+          </li>
+          <li class="pre-header__social">
+            <a href="#">
+              <img height="20" src="assets/icons/youtube-icon.svg" alt="youtube" />
+            </a>
+          </li>
         </ul>
       </div>
       <div class="header__content">
@@ -34,16 +48,17 @@
           </button>
           <ul class="header__collapse-nav">
             <li class="collapse-nav__item"><a class="header__link header__link--active" href="/">Home</a></li>
-            <li class="collapse-nav__item"><a class="header__link" href="/">About</a></li>
-            <li class="collapse-nav__item"><a class="header__link" href="/">Features</a></li>
+            <li class="collapse-nav__item"><a class="header__link" href="#about">About</a></li>
+            <li class="collapse-nav__item"><a class="header__link" href="#features">Features</a></li>
+            <li class="collapse-nav__item"><a class="header__link" href="/form.html">Form</a></li>
           </ul>
         </nav>
         <a class="header__logo" href="/"><img class="logo__image" src="assets/logo.png" alt="logo" /></a>
         <div class="header__right">
           <nav class="header__nav">
             <ul class="header__collapse-nav">
-              <li class="collapse-nav__item"><a class="header__link" href="/">Screenshot</a></li>
-              <li class="collapse-nav__item"><a class="header__link" href="/">Blog</a></li>
+              <li class="collapse-nav__item"><a class="header__link" href="#usage">Screenshot</a></li>
+              <li class="collapse-nav__item"><a class="header__link" href="#blog">Blog</a></li>
             </ul>
           </nav>
           <a href="#" class="header__btn">Download</a>
@@ -82,7 +97,7 @@
           </div>
         </div>
       </section>
-      <section class="section about-section">
+      <section class="section about-section" id="about">
         <div class="container">
           <h2 class="section__title">About Our App</h2>
           <p class="section__description">
@@ -124,7 +139,7 @@
           </div>
         </div>
       </section>
-      <section class="section with-background app-features-section">
+      <section class="section with-background app-features-section" id="features">
         <div class="container">
           <h2 class="section__title">App features</h2>
           <p class="section__description">
@@ -228,7 +243,7 @@
           </div>
         </div>
       </section>
-      <section class="section usage-section">
+      <section class="section usage-section" id="usage">
         <div class="container">
           <h2 class="section__title">how to use the app perfectly</h2>
           <p class="section__description">
@@ -319,7 +334,7 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section" id="blog">
         <div class="container">
           <h2 class="section__title">Our recent blog</h2>
           <p class="section__description">
@@ -420,10 +435,10 @@
             <h3 class="footer__subtitle">quick link</h3>
             <nav>
               <ul class="footer__quick-links">
-                <li><a class="footer__quick-link" href="#">About</a></li>
-                <li><a class="footer__quick-link" href="#">Features</a></li>
-                <li><a class="footer__quick-link" href="#">Screenshot</a></li>
-                <li><a class="footer__quick-link" href="#">Blog</a></li>
+                <li><a class="footer__quick-link" href="/#about">About</a></li>
+                <li><a class="footer__quick-link" href="/#features">Features</a></li>
+                <li><a class="footer__quick-link" href="/#usage">Screenshot</a></li>
+                <li><a class="footer__quick-link" href="/#blog">Blog</a></li>
               </ul>
             </nav>
           </div>
