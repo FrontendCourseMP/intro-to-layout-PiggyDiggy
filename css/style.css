@@ -631,7 +631,8 @@ img {
 }
 
 .slider-navigation__button {
-  height: 100%;
+  display: block;
+  height: 15px;
   width: 15px;
   border-radius: 100%;
   border: none;
