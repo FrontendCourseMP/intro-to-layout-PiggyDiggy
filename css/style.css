@@ -65,6 +65,36 @@ img {
   font-style: italic;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.skip-link {
+  display: block;
+  position: absolute;
+  top: 16px;
+  left: 0;
+  padding: 10px 15px;
+  color: var(--text-accent);
+  background: white;
+  z-index: 100;
+  font-size: 1.6rem;
+  transform: translateX(-100%);
+}
+
+.skip-link:focus {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .container {
   padding: 0 16px;
   max-width: 1250px;
@@ -802,11 +832,15 @@ img {
   margin-top: 32px;
 }
 
+.newsletter__label {
+  display: contents;
+}
+
 .newsletter__input {
   flex-grow: 1;
+  padding-left: 16px;
   border: none;
   font-size: 1.6rem;
-  padding-left: 16px;
   border-radius: 4px;
   color: var(--text-main);
 }

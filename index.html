@@ -8,6 +8,7 @@
     <title>Document</title>
   </head>
   <body>
+    <a class="skip-link" href="#about">Go to content</a>
     <header class="header container">
       <div class="pre-header">
         <a class="pre-header__link" href="mailto:info@youremail.com">
@@ -79,11 +80,13 @@
               <li>
                 <a class="hero__download-link" href="/">
                   <img height="34" src="assets/google-play.png" alt="google play" />
+                  <span class="sr-only">Download from google play</span>
                 </a>
               </li>
               <li>
                 <a class="hero__download-link" href="/">
                   <img height="34" src="assets/app-store.png" alt="app store" />
+                  <span class="sr-only">Download from app store</span>
                 </a>
               </li>
             </ul>
@@ -210,10 +213,16 @@
             </p>
             <ul class="download-links">
               <li>
-                <a href="/"><img height="45" src="assets/google-play.png" alt="google play" /></a>
+                <a href="/"
+                  ><img height="45" src="assets/google-play.png" alt="google play" />
+                  <span class="sr-only">Download from google play</span>
+                </a>
               </li>
               <li>
-                <a href="/"><img height="45" src="assets/app-store.png" alt="app store" /></a>
+                <a href="/">
+                  <img height="45" src="assets/app-store.png" alt="app store" />
+                  <span class="sr-only">Download from app store</span>
+                </a>
               </li>
             </ul>
             <ul class="app-stats">
@@ -317,19 +326,29 @@
           </ul>
           <ul class="slider-navigation">
             <li class="slider-navigation__point slider-navigation__point_active">
-              <button class="slider-navigation__button"></button>
+              <button class="slider-navigation__button">
+                <span class="sr-only">Go to 1 slide</span>
+              </button>
             </li>
             <li class="slider-navigation__point">
-              <button class="slider-navigation__button"></button>
+              <button class="slider-navigation__button">
+                <span class="sr-only">Go to 1 slide</span>
+              </button>
             </li>
             <li class="slider-navigation__point">
-              <button class="slider-navigation__button"></button>
+              <button class="slider-navigation__button">
+                <span class="sr-only">Go to 1 slide</span>
+              </button>
             </li>
             <li class="slider-navigation__point">
-              <button class="slider-navigation__button"></button>
+              <button class="slider-navigation__button">
+                <span class="sr-only">Go to 1 slide</span>
+              </button>
             </li>
             <li class="slider-navigation__point">
-              <button class="slider-navigation__button"></button>
+              <button class="slider-navigation__button">
+                <span class="sr-only">Go to 1 slide</span>
+              </button>
             </li>
           </ul>
         </div>
@@ -446,7 +465,10 @@
             <h3 class="footer__subtitle newsletter-title">news letter</h3>
             <p class="footer__description">Subscribe our newsletter to get our latest update & news</p>
             <form class="newsletter">
-              <input class="newsletter__input" type="email" placeholder="Your email address" />
+              <label class="newsletter__label">
+                <span class="sr-only">Email</span>
+                <input class="newsletter__input" type="email" placeholder="Your email address" />
+              </label>
               <button class="newsletter__button" type="submit">
                 <img height="24" src="assets/icons/send-icon.svg" alt="send" />
               </button>
@@ -454,7 +476,7 @@
           </div>
         </div>
         <div class="footer__copyright">
-          <img height="18" src="assets/icons/copyright-icon.svg" alt="copyright" />
+          <img height="18" src="assets/icons/copyright-icon.svg" alt="" />
           <p>Copyright 2021 .Ojjomedia. All Right Reserved.</p>
         </div>
       </div>
